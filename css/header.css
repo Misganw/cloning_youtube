@@ -1,0 +1,166 @@
+body {
+    padding-top: 40px;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: 0px 3px 1px rgb(211, 211, 211);
+    height: 50px;
+    align-items: center;
+    left: 0;
+    top: 0;
+    right: 0;
+    position: fixed;
+    z-index: 100;
+
+}
+
+.left_section img {
+    display: inline-block;
+}
+
+.left_section {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    margin-left: 20px;
+
+}
+
+.left_section .logo {
+    width: 100px;
+    margin-left: 10px;
+}
+
+.left_section .hamburger {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.hamburger_span {
+    width: 1px;
+}
+
+.middle_section {
+    display: flex;
+    flex: 2;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.middle_section .search {
+    flex: 1;
+    height: 30px;
+    border: 0.5px solid rgb(203, 202, 202);
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding-left: 10px;
+    width: 0;
+}
+
+.search::placeholder {
+    margin-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.middle_section .btn_search {
+    height: 33px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: 0.5px solid rgb(203, 202, 202);
+}
+
+.middle_section img {
+    width: 30px;
+}
+
+.middle_section .mic {
+    margin-left: 20px;
+    border-radius: 100%;
+    padding: 5px;
+    border: none;
+}
+
+
+
+.right_section {
+    display: flex;
+    flex: 2;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    width: 200px;
+    column-gap: 15px;
+}
+
+.right_section .upload,
+.app,
+.notification {
+    height: 30px;
+}
+
+.right_section .profile_img {
+    width: 30px;
+    border-radius: 20px;
+}
+
+.notification {
+    position: relative;
+}
+
+.amountof_notice {
+    position: absolute;
+    background-color: red;
+    color: white;
+    width: 15px;
+    border-radius: 50px;
+    top: 0px;
+    right: 1px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    padding: 1px;
+
+}
+
+.header_tooltip {
+    position: absolute;
+    background-color: rgb(77, 77, 77);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    border-radius: 5px;
+    color: white;
+    bottom: -50px;
+    right: -25px;
+    opacity: 0;
+    padding: 5px;
+    pointer-events: none;
+}
+
+.notification:hover .header_tooltip {
+    cursor: pointer;
+    opacity: 1;
+}
+
+.searching_icon {
+    position: relative;
+}
+
+.searching_icon:hover .header_tooltip {
+    cursor: pointer;
+    opacity: 1;
+}
+
+.search_mic {
+    position: relative;
+}
+
+.search_mic:hover .header_tooltip {
+    cursor: pointer;
+    opacity: 1;
+}

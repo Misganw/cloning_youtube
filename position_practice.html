@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS position practice</title>
+    <style>
+        body {
+            height: 2000px;
+            padding-top: 51px;
+            padding-left: 60px;
+        }
+
+        .header {
+            background-color: rgb(7, 72, 145);
+            height: 45px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+
+        }
+
+        .positionOne {
+            background-color: aqua;
+            width: 200px;
+            height: 200px;
+        }
+
+        .positionTwo {
+            background-color: rgb(18, 191, 53);
+            width: 200px;
+            height: 200px;
+        }
+
+        .sidebar {
+            display: flex;
+            flex-direction: row;
+            background-color: green;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            top: 45px;
+            width: 60px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">This is header</div>
+    <div class="sidebar">This is side bar</div>
+    <div class="positionOne">
+        position one
+    </div>
+    <div class="positionTwo">
+        Postion two
+    </div>
+</body>
+
+</html>

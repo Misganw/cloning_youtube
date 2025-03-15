@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed Sidebar</title>
+    <style>
+        .sidebar {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            background-color: rgba(75, 74, 74, 0.8);
+            position: fixed;
+            margin-left: 5px;
+            flex: 2 1;
+        }
+
+        .left {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            padding-top: 5px;
+            padding-left: 15px;
+            padding-right: 15px;
+            background-color: rgb(61, 60, 60);
+        }
+
+        .hamburger {
+            display: none;
+        }
+
+        .display_hamburger {
+            display: flex;
+        }
+
+        .left .prof_image {
+            padding-top: 5px;
+        }
+
+        .left .profile_image {
+            width: 50px;
+            border-radius: 100%;
+        }
+
+        .prof_name {
+            margin-top: 5px;
+        }
+
+        .right {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            background-color: rgb(75, 75, 75);
+            width: 300px;
+
+        }
+
+        .subheader {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            color: white;
+            box-shadow: 1px 0px 3px rgb(212, 212, 212);
+            margin-top: 0px;
+            margin-left: 0px;
+            margin-right: 3px;
+
+        }
+
+        .subheader_right {
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+            margin-right: 5px;
+
+        }
+
+        .list {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            color: rgb(201, 200, 200);
+            padding-left: 10px;
+        }
+
+        .subheader_left {
+            margin-left: 10px;
+        }
+
+        .hide_right_sidebar {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="left">
+            <div class="hamburger">
+                <img src="../icons/hamburger-menu.svg" alt="" class="profile_image">
+            </div>
+            <div class="prof_image">
+                <img src="../channel-pictures/channel-3.jpeg" alt="" class="profile_image">
+            </div>
+            <div class="prof_name">
+                <img src="../channel-pictures/channel-2.jpeg" alt="" class="profile_image">
+            </div>
+            <div class="prof_name">
+                <img src="../channel-pictures/channel-4.jpeg" alt="" class="profile_image">
+            </div>
+            <div class="prof_name">
+                <img src="../channel-pictures/channel-5.jpeg" alt="" class="profile_image">
+            </div>
+
+        </div>
+        <div class="right">
+            <div class="subheader">
+                <h1 class="subheader_left">Info</h1>
+                <img src="../images/cat.jpg" alt="" class="subheader_right">
+            </div>
+            <div class="list">
+                <p class="p1">New Video</p>
+                <p class="p2">Update</p>
+                <p class="p3">Setting</p>
+            </div>
+
+
+        </div>
+    </div>
+    <script>
+        let isclicked = true;
+        const right_sidebar = document.querySelector('.right');
+        const hamburger_btn = document.querySelector('.hamburger');
+        right_sidebar.addEventListener('click', () => {
+            if (isclicked) {
+                right_sidebar.classList.add('hide_right_sidebar');
+                hamburger_btn.classList.add('display_hamburger');
+                isclicked = true;
+            }
+        })
+        hamburger_btn.addEventListener('click', () => {
+            if (isclicked) {
+                right_sidebar.classList.remove('hide_right_sidebar');
+                hamburger.classList.remove('display_hamburger');
+                isclicked = true
+            }
+        });
+
+    </script>
+</body>
+
+</html>

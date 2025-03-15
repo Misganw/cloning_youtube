@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise 14 f & g</title>
+    <style>
+        .main {
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+            column-gap: 20px;
+        }
+
+        .right {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .submessage {
+            display: flex;
+            flex-direction: row;
+            align-items: stretch;
+            border-radius: 15px;
+            border: 1px solid rgb(211, 210, 210);
+            /* box-shadow: 0px 0px 10px rgb(188, 188, 188); */
+        }
+
+        .subright {
+            display: flex;
+            flex-direction: column;
+
+            padding: 10px;
+        }
+
+        .picture {
+            border-radius: 100%;
+        }
+
+        .main_title_body {
+            margin-bottom: 8px;
+        }
+
+        .subleft {
+            width: 150px;
+            height: 150px;
+            background-color: rgb(220, 220, 220);
+            margin-right: 10px;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+        }
+
+        .left {
+            margin-top: 20px;
+        }
+
+        .message_body,
+        .url_message_body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="left">
+            <img class="picture" src="../channel-pictures/channel-3.jpeg" alt="" srcset="">
+        </div>
+        <div class="right">
+            <div class="main_title">
+                <h1 class="main_title_body">Ethioptech @ethioptech</h1>
+            </div>
+            <div class="message">
+                <h3 class="message_body"> This tutorial is prepared for beginners of web development</h3>
+            </div>
+            <div class="submessage">
+                <div class="subleft">
+                    <img src="">
+                </div>
+                <div class="subright">
+                    <div class="url">
+                        <h2 class="url_body">www.ethioptec.com</h2>
+                    </div>
+                    <div class="url_message">
+                        <h3 class="url_message_body">The complete guide of full stacke development that I prepared in
+                            this year</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

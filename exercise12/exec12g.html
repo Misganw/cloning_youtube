@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 10 g</title>
+    <style>
+        .wrap {
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0px 0px 10px rgb(176, 175, 175);
+            padding: 10px;
+        }
+
+        .main {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+            margin-left: 5px;
+        }
+
+        .left {
+            float: left;
+            width: 37rem;
+        }
+
+        .right {
+            float: right;
+            vertical-align: top;
+            margin-left: 5px;
+            margin-right: 0px;
+        }
+
+        .profile_image {
+            display: inline-block;
+            width: 4rem;
+
+        }
+
+        .profile_image .profile_img {
+            display: inline-block;
+            width: 100%;
+            height: 60px;
+            border-radius: 100%;
+            margin-top: 10px;
+
+        }
+
+        .profile_detail {
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 1rem;
+        }
+
+        .profile_detail .main_title {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 800;
+            font-size: 20px;
+            margin-top: 0px;
+            margin-bottom: 2px;
+        }
+
+        .profile_detail .profile_name,
+        .popularity {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 500;
+            font-size: 20px;
+            margin-top: 0px;
+            margin-bottom: 2px;
+            color: rgb(82, 83, 83);
+        }
+
+        .follow {
+            background-color: rgb(24, 163, 228);
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            color: white;
+            font-weight: 900;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="main">
+            <div class="left">
+                <div class="profile_image">
+                    <img src="../images/cat.jpg" alt="" class="profile_img">
+                </div>
+                <div class="profile_detail">
+                    <p class="main_title">Olive</p>
+                    <p class="profile_name">The Cat</p>
+                    <p class="popularity">Popular</p>
+                </div>
+            </div>
+            <div class="right">
+                <button class="follow">Follow</button>
+            </div>
+        </div>
+        <div class="main">
+            <div class="left">
+                <div class="profile_image">
+                    <img src="../images/cat2.jpg" alt="" class="profile_img">
+                </div>
+                <div class="profile_detail">
+                    <p class="main_title">Mimi</p>
+                    <p class="profile_name">Sleepy Cat</p>
+                    <p class="popularity">Popular</p>
+                </div>
+            </div>
+            <div class="right">
+                <button class="follow">Follow</button>
+            </div>
+        </div>
+        <div class="main">
+            <div class="left">
+                <div class="profile_image">
+                    <img src="../images/dog.jpg" alt="" class="profile_img">
+                </div>
+                <div class="profile_detail">
+                    <p class="main_title">Rex</p>
+                    <p class="profile_name">Happ BullDog</p>
+                    <p class="popularity">Popular</p>
+                </div>
+            </div>
+            <div class="right">
+                <button class="follow">Follow</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

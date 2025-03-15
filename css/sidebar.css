@@ -1,0 +1,59 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 60px;
+    /* width: 300px; */
+    box-shadow: 1px 3px 3px rgb(211, 211, 211);
+    display: none;
+
+}
+
+.logo_hamburger {
+    width: 40px;
+    border-radius: 100%;
+    margin-top: 5px;
+}
+
+.hamburger_sidebar {
+    width: 40px;
+}
+
+.hideSidebar {
+    display: flex;
+    padding: 10px;
+    z-index: 100;
+    top: 0
+}
+
+.side_image {
+    width: 40px;
+    border-radius: 100%;
+    margin-top: 5px;
+}
+
+.side_bar_image {
+    width: 100%;
+}
+
+.side_bar_image p {
+    margin-top: 0;
+}
+
+.side_bar_image:hover {
+    background-color: rgb(226, 225, 225);
+    cursor: pointer;
+}
+
+
+.side_bar_image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+}
